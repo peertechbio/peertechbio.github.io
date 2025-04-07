@@ -1,18 +1,19 @@
 title: "Peer Platform Documentation"
 description: "Official documentation for the Peer Platform"
-theme: jekyll-theme-cayman
-# You can use any Jekyll-supported theme. For GitHub Pages defaults, see:
-# https://pages.github.com/themes/
+remote_theme: just-the-docs/just-the-docs
+logo: /assets/images/logo.png
 
-# The following settings are optional but can be helpful
-# for a multi-page docs site.
+# Just the Docs configuration
+just_the_docs:
+  # Peer brand color
+  # This sets the accent color in the sidebar, headings, links, etc.
+  # See https://just-the-docs.github.io/just-the-docs/docs/configuration/
+  palette:
+    primary:
+      accent: "#ff4e49"
 
+# Additional site settings
 markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
-
-# If you want a sidebar or advanced nav, you could integrate a docs theme like Just the Docs
-# For that: https://github.com/just-the-docs/just-the-docs
-# Example:
-remote_theme: just-the-docs/just-the-docs
