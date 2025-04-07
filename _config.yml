@@ -1,0 +1,18 @@
+title: "Peer Platform Documentation"
+description: "Official documentation for the Peer Platform"
+theme: jekyll-theme-cayman
+# You can use any Jekyll-supported theme. For GitHub Pages defaults, see:
+# https://pages.github.com/themes/
+
+# The following settings are optional but can be helpful
+# for a multi-page docs site.
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# If you want a sidebar or advanced nav, you could integrate a docs theme like Just the Docs
+# For that: https://github.com/just-the-docs/just-the-docs
+# Example:
+remote_theme: just-the-docs/just-the-docs
