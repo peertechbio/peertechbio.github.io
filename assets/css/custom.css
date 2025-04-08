@@ -43,7 +43,11 @@ html, body {
 .main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.main-header {
+    min-height: 80px;
 }
 
 /* Sidebar styling */
@@ -194,7 +198,7 @@ pre {
   margin-bottom: 1.5rem;
   width: 100%;
   position: relative;
-  padding: 0.75rem 1rem;
+  padding: 1.25rem 1.25rem;
 }
 
 .search-input-wrap {
