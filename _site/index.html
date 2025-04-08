@@ -82,54 +82,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-<!-- Force logo to show -->
-<style>
-  .site-logo {
-    visibility: visible !important;
-    opacity: 1 !important;
-    display: inline-block !important;
-    height: 40px !important;
-    width: auto !important;
-  }
-  
-  /* Debug outline to see where logo should be */
-  .site-title {
-    border: none;
-    display: flex !important;
-    align-items: center !important;
-  }
-</style>
-
-<!-- Fix logo with JavaScript -->
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Create a new logo image if it doesn't exist or isn't visible
-    setTimeout(function() {
-      var siteTitle = document.querySelector('.site-title');
-      var existingLogo = document.querySelector('.site-logo');
-      
-      if (!existingLogo || getComputedStyle(existingLogo).display === 'none') {
-        if (existingLogo) {
-          existingLogo.remove();
-        }
-        
-        var newLogo = document.createElement('img');
-        newLogo.src = '/assets/images/logo.png';
-        newLogo.alt = 'Peer Platform Documentation';
-        newLogo.className = 'site-logo';
-        newLogo.style.height = '40px';
-        newLogo.style.width = 'auto';
-        newLogo.style.display = 'inline-block';
-        newLogo.style.marginRight = '1rem';
-        
-        if (siteTitle) {
-          siteTitle.prepend(newLogo);
-        }
-      }
-    }, 100);
-  });
-</script> 
-
 </head>
 
 <body>
