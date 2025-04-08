@@ -1,19 +1,85 @@
+# Site Settings
 title: "Peer Platform Documentation"
 description: "Official documentation for the Peer Platform"
-remote_theme: just-the-docs/just-the-docs
 logo: /assets/images/logo.png
+remote_theme: just-the-docs/just-the-docs
 
-# Just the Docs configuration
+# Just the Docs Configuration
 just_the_docs:
-  # Peer brand color
-  # This sets the accent color in the sidebar, headings, links, etc.
-  # See https://just-the-docs.github.io/just-the-docs/docs/configuration/
+  # Use Peer's brand color for the accent
   palette:
     primary:
       accent: "#ff4e49"
+      background: "#ffffff"
+      foreground: "#333333"
+    links:
+      main: "#3182ce"
+      hover: "#2c5282"
+  # Enable site search in the top navigation
+  search:
+    enabled: true
+    heading_level: 2
+    preview_words_before: 3
+    preview_words_after: 10
+    rel_url: true
+  # Hide the page's H1 title if you prefer just the logo + nav (toggle true/false)
+  show_title: false
+  # Table of contents settings
+  # Options: nested, multi-level
+  table_of_contents:
+    nested: true
+  # Enable modern callouts
+  callouts:
+    note:
+      color: blue
+    warning:
+      color: yellow
+    important:
+      color: red
 
-# Additional site settings
+# Site footer content
+footer_content: "© 2023 Peer Tech. All rights reserved."
+
+# Custom styling
+aux_links:
+  "Contact Us":
+    - "mailto:support@peer.tech"
+
+# Markdown Configuration
 markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+# Plugins (optional but recommended for modern sites)
+plugins:
+  - jekyll-seo-tag    # Better SEO metadata
+  - jekyll-feed       # Atom/RSS feeds
+  - jekyll-sitemap    # Generate sitemap.xml for search engines
+
+# Exclude files or folders from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
+
+# Favicon settings
+favicon_ico: "/assets/favicon/favicon.png"
+
+# (Optional) GitHub Pages default URL settings
+# Uncomment and set your baseurl if you're using a project site (like user.github.io/project)
+# url: "https://user.github.io"
+# baseurl: "/peer-platform-docs"
+
+# If you want to track the GitHub repository link in your site's footer or nav:
+# repository_url: "https://github.com/your_username/peer-platform"

@@ -1,0 +1,121 @@
+{"0": {
+    "doc": "Getting Started",
+    "title": "Getting Started",
+    "content": " ",
+    "url": "/docs/1-getting-started.html",
+    
+    "relUrl": "/docs/1-getting-started.html"
+  },"1": {
+    "doc": "Getting Started",
+    "title": "Overview",
+    "content": "Before you begin, ensure you have: . | A valid Peer Platform user account | Appropriate permissions to access or edit documents | Any required document assets (e.g., Protocol, SAP, TLF for clinical documents) | . ",
+    "url": "/docs/1-getting-started.html#overview",
+    
+    "relUrl": "/docs/1-getting-started.html#overview"
+  },"2": {
+    "doc": "Getting Started",
+    "title": "Login and Dashboard",
+    "content": ". | Log in at [your-login-url] using your credentials. | Once logged in, you’ll see the Peer Platform dashboard, showing any documents or studies assigned to you. | . Continue to Creating a New Document to learn how the Peer team sets up a new document during the “Build &amp; Config” phase. ",
+    "url": "/docs/1-getting-started.html#login-and-dashboard",
+    
+    "relUrl": "/docs/1-getting-started.html#login-and-dashboard"
+  },"3": {
+    "doc": "Creating a New Document",
+    "title": "Creating a New Document",
+    "content": " ",
+    "url": "/docs/2-creating-new-document.html",
+    
+    "relUrl": "/docs/2-creating-new-document.html"
+  },"4": {
+    "doc": "Creating a New Document",
+    "title": "Build &amp; Config Phase",
+    "content": "In our initial rollout, the Peer team will create and configure the document for you. During this phase: . | A new study/document project is created. | Relevant document templates are chosen (e.g., CSR, Narratives, Protocol, Plain Language Summary). | Required data sources (Protocol, SAP, TLF, etc.) are uploaded and processed by the AI engine. | The system auto-generates initial content for each section of your document. | . You (the customer or medical writer) will typically begin working from the Editing and Review phase onward. ",
+    "url": "/docs/2-creating-new-document.html#build--config-phase",
+    
+    "relUrl": "/docs/2-creating-new-document.html#build--config-phase"
+  },"5": {
+    "doc": "Creating a New Document",
+    "title": "Document Types",
+    "content": "Examples of supported document types: . | Clinical Study Report (CSR) | Narratives | Protocol | Plain Language Summary | (Add or remove based on your needs) | . ",
+    "url": "/docs/2-creating-new-document.html#document-types",
+    
+    "relUrl": "/docs/2-creating-new-document.html#document-types"
+  },"6": {
+    "doc": "Creating a New Document",
+    "title": "Video Demo (Placeholder)",
+    "content": "We’ll embed a video here that shows the Peer team’s “Build &amp; Config” process from start to finish. ",
+    "url": "/docs/2-creating-new-document.html#video-demo-placeholder",
+    
+    "relUrl": "/docs/2-creating-new-document.html#video-demo-placeholder"
+  },"7": {
+    "doc": "Editing and Review",
+    "title": "Editing and Review",
+    "content": "Once the Peer team has created the new document, you can: . | Access the Kanban or section-based view of the document | Perform Chat edits, Manual edits, or Trace to Data for verification | . ",
+    "url": "/docs/3-editing-and-review.html",
+    
+    "relUrl": "/docs/3-editing-and-review.html"
+  },"8": {
+    "doc": "Editing and Review",
+    "title": "1. Chat",
+    "content": "Leverage our AI-powered chat interface to: . | Make quick edits or content transformations (e.g., “Convert this text to a table”) | Insert key messages or additional paragraphs | Get suggestions to refine language or structure | . Use Case #1 . Placeholder: “Video demonstrating how to convert a prose paragraph to an in-text table via the chat interface.” . Use Case #2 . Placeholder: “Video demonstrating how to insert a key message from the clinical team using the chat interface.” . Use Case #3 . Placeholder: “Video showing how to summarize or rephrase a large section of text with a single command.” . Use Case #4 . Placeholder: “Video showing how to restore previous versions or compare changes in real time.” . ",
+    "url": "/docs/3-editing-and-review.html#1-chat",
+    
+    "relUrl": "/docs/3-editing-and-review.html#1-chat"
+  },"9": {
+    "doc": "Editing and Review",
+    "title": "2. Manual Edit",
+    "content": "For direct, on-screen editing—like adjusting spelling, formatting, or quick text fixes—just click into the text area: . | Make your edits | See optional redline/tracking or revert changes | Confirm when you’re done | . ",
+    "url": "/docs/3-editing-and-review.html#2-manual-edit",
+    
+    "relUrl": "/docs/3-editing-and-review.html#2-manual-edit"
+  },"10": {
+    "doc": "Editing and Review",
+    "title": "3. Trace to Data",
+    "content": "To ensure accuracy, you can: . | Click “Trace to Data” next to any section | View the original data sources (protocol, SAP, TLF, etc.) used by the AI | Cross-check for correctness before finalizing | . ",
+    "url": "/docs/3-editing-and-review.html#3-trace-to-data",
+    
+    "relUrl": "/docs/3-editing-and-review.html#3-trace-to-data"
+  },"11": {
+    "doc": "Export and Finalization",
+    "title": "Export and Finalization",
+    "content": "When your document is fully reviewed and approved: . | Apply Abbreviations &amp; Hyperlinks The AI automatically checks for abbreviations and relevant hyperlinks. | Final Consistency Check Ensures the document is consistent with the source data, final redlines are accepted (or rejected), and the final layout is correct. | Export . | Download as .docx (Word format) | (Possible future formats: PDF, HTML, etc.) | . | . After export, you can open the final Word document to: . | Perform any last-minute formatting touches | Share with regulatory authorities, clients, or other stakeholders | . ",
+    "url": "/docs/4-export-and-finalization.html",
+    
+    "relUrl": "/docs/4-export-and-finalization.html"
+  },"12": {
+    "doc": "FAQ",
+    "title": "Frequently Asked Questions",
+    "content": "Q1: Which document types are supported by Peer Platform? . A1: We currently support CSR, Narratives, Protocols, Plain Language Summaries, and more. For specialized formats, contact Peer support. Q2: How do I revert to a previous version of a section? . A2: Use the version history or “redline” functionality in the Editing and Review phase to compare or restore an older version. Q3: Can I add a custom template? . A3: Yes. Please reach out to the Peer team during the Build &amp; Config phase to incorporate a custom template into the AI engine. (Add more FAQs as you gather user feedback.) . ",
+    "url": "/docs/5-faq.html#frequently-asked-questions",
+    
+    "relUrl": "/docs/5-faq.html#frequently-asked-questions"
+  },"13": {
+    "doc": "FAQ",
+    "title": "FAQ",
+    "content": " ",
+    "url": "/docs/5-faq.html",
+    
+    "relUrl": "/docs/5-faq.html"
+  },"14": {
+    "doc": "Peer Platform Documentation",
+    "title": "Peer Platform Documentation",
+    "content": "Welcome to the Peer Platform documentation site! . Our platform empowers teams to: . | Create and configure new medical/clinical documents (e.g., CSR, Narratives, Protocols, Plain Language Summaries, etc.) | Build &amp; Configure documents (done by the Peer team initially) | Allow customers and medical writers to edit and review using advanced AI-assisted features (chat-based editing, manual edits, and data traceability) | Finalize and export the completed documents in multiple formats | . ",
+    "url": "/",
+    
+    "relUrl": "/"
+  },"15": {
+    "doc": "Peer Platform Documentation",
+    "title": "Quick Navigation",
+    "content": ". | Getting Started | Creating a New Document | Editing and Review | Export and Finalization | FAQ | . ",
+    "url": "/#quick-navigation",
+    
+    "relUrl": "/#quick-navigation"
+  },"16": {
+    "doc": "Peer Platform Documentation",
+    "title": "Using This Documentation",
+    "content": ". | Set Up Learn basic requirements and log in to the platform in Getting Started. | Create New Documents Understand the initial “Build &amp; Config” phase (handled by Peer) and see how to add your data sources in Creating a New Document. | Edit and Review Explore the powerful AI-assisted editing tools, chat workflows, and more in Editing and Review. | Finalize Learn how to export your finished document (with auto-inserted hyperlinks and abbreviations) in Export and Finalization. | Get Answers Refer to the FAQ or contact our support team. | . ",
+    "url": "/#using-this-documentation",
+    
+    "relUrl": "/#using-this-documentation"
+  }
+}

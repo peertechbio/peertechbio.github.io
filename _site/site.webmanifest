@@ -1,0 +1,14 @@
+{
+  "name": "Peer Platform Documentation",
+  "short_name": "Peer Docs",
+  "icons": [
+    {
+      "src": "/assets/favicon/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ff4e49",
+  "background_color": "#ffffff",
+  "display": "standalone"
+} 

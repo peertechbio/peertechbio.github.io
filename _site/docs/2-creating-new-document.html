@@ -1,0 +1,385 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <link rel="stylesheet" href="/assets/css/just-the-docs-default.css">
+
+  <link rel="stylesheet" href="/assets/css/just-the-docs-head-nav.css" id="jtd-head-nav-stylesheet">
+
+  <style id="jtd-nav-activation">
+  
+
+    
+    .site-nav > ul.nav-list:first-child > li:not(:nth-child(3)) > a,
+    .site-nav > ul.nav-list:first-child > li > ul > li a {
+      background-image: none;
+    }
+
+    .site-nav > ul.nav-list:not(:first-child) a,
+    .site-nav li.external a {
+      background-image: none;
+    }
+
+    .site-nav > ul.nav-list:first-child > li:nth-child(3) > a {
+      font-weight: 600;
+      text-decoration: none;
+    }.site-nav > ul.nav-list:first-child > li:nth-child(3) > button svg {
+      transform: rotate(-90deg);
+    }.site-nav > ul.nav-list:first-child > li.nav-list-item:nth-child(3) > ul.nav-list {
+      display: block;
+    }
+  </style>
+
+  
+
+  
+    <script src="/assets/js/vendor/lunr.min.js"></script>
+  
+
+  <script src="/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
+
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Creating a New Document | Peer Platform Documentation</title>
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Creating a New Document" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Official documentation for the Peer Platform" />
+<meta property="og:description" content="Official documentation for the Peer Platform" />
+<link rel="canonical" href="http://localhost:4000/docs/2-creating-new-document.html" />
+<meta property="og:url" content="http://localhost:4000/docs/2-creating-new-document.html" />
+<meta property="og:site_name" content="Peer Platform Documentation" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Creating a New Document" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Official documentation for the Peer Platform","headline":"Creating a New Document","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"}},"url":"http://localhost:4000/docs/2-creating-new-document.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <!-- Favicon links -->
+<link rel="icon" href="" type="image/png">
+<link rel="shortcut icon" href="" type="image/png">
+<link rel="apple-touch-icon" href="">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#ff4e49">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/assets/css/custom.css">
+
+<!-- Font improvements -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Force logo to show -->
+<style>
+  .site-logo {
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: inline-block !important;
+    height: 40px !important;
+    width: auto !important;
+  }
+  
+  /* Debug outline to see where logo should be */
+  .site-title {
+    border: none;
+    display: flex !important;
+    align-items: center !important;
+  }
+</style>
+
+<!-- Fix logo with JavaScript -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Create a new logo image if it doesn't exist or isn't visible
+    setTimeout(function() {
+      var siteTitle = document.querySelector('.site-title');
+      var existingLogo = document.querySelector('.site-logo');
+      
+      if (!existingLogo || getComputedStyle(existingLogo).display === 'none') {
+        if (existingLogo) {
+          existingLogo.remove();
+        }
+        
+        var newLogo = document.createElement('img');
+        newLogo.src = '/assets/images/logo.png';
+        newLogo.alt = 'Peer Platform Documentation';
+        newLogo.className = 'site-logo';
+        newLogo.style.height = '40px';
+        newLogo.style.width = 'auto';
+        newLogo.style.display = 'inline-block';
+        newLogo.style.marginRight = '1rem';
+        
+        if (siteTitle) {
+          siteTitle.prepend(newLogo);
+        }
+      }
+    }, 100);
+  });
+</script> 
+
+</head>
+
+<body>
+  <a class="skip-to-main" href="#main-content">Skip to main content</a>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="svg-link" viewBox="0 0 24 24">
+  <title>Link</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link">
+    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+  </svg>
+</symbol>
+
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+  <title>Menu</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+    <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+</symbol>
+
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+  <title>Expand</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+    <polyline points="9 18 15 12 9 6"></polyline>
+  </svg>
+</symbol>
+
+  <!-- Feather. MIT License: https://github.com/feathericons/feather/blob/master/LICENSE -->
+<symbol id="svg-external-link" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link">
+  <title id="svg-external-link-title">(external link)</title>
+  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line>
+</symbol>
+
+  
+    <symbol id="svg-doc" viewBox="0 0 24 24">
+  <title>Document</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file">
+    <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline>
+  </svg>
+</symbol>
+
+    <symbol id="svg-search" viewBox="0 0 24 24">
+  <title>Search</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+    <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+  </svg>
+</symbol>
+
+  
+  
+    <!-- Bootstrap Icons. MIT License: https://github.com/twbs/icons/blob/main/LICENSE.md -->
+<symbol id="svg-copy" viewBox="0 0 16 16">
+  <title>Copy</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard" viewBox="0 0 16 16">
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+    <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+  </svg>
+</symbol>
+<symbol id="svg-copied" viewBox="0 0 16 16">
+  <title>Copied</title>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-check-fill" viewBox="0 0 16 16">
+    <path d="M6.5 0A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3Zm3 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3Z"/>
+    <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1A2.5 2.5 0 0 1 9.5 5h-3A2.5 2.5 0 0 1 4 2.5v-1Zm6.854 7.354-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708Z"/>
+  </svg>
+</symbol>
+
+  
+</svg>
+
+  
+    <div class="side-bar">
+  <div class="site-header" role="banner">
+    <a href="/" class="site-title lh-tight">
+  <div class="site-logo" role="img" aria-label="Peer Platform Documentation"></div>
+
+</a>
+    <button id="menu-button" class="site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
+      <svg viewBox="0 0 24 24" class="icon" aria-hidden="true"><use xlink:href="#svg-menu"></use></svg>
+    </button>
+  </div>
+
+  <nav aria-label="Main" id="site-nav" class="site-nav">
+  
+  
+    <ul class="nav-list"><li class="nav-list-item"><a href="/" class="nav-list-link">Peer Platform Documentation</a></li><li class="nav-list-item"><a href="/docs/1-getting-started.html" class="nav-list-link">Getting Started</a></li><li class="nav-list-item"><a href="/docs/2-creating-new-document.html" class="nav-list-link">Creating a New Document</a></li><li class="nav-list-item"><a href="/docs/3-editing-and-review.html" class="nav-list-link">Editing and Review</a></li><li class="nav-list-item"><a href="/docs/4-export-and-finalization.html" class="nav-list-link">Export and Finalization</a></li><li class="nav-list-item"><a href="/docs/5-faq.html" class="nav-list-link">FAQ</a></li></ul>
+  
+</nav>
+
+
+
+
+  
+  
+    <footer class="site-footer">
+      This site uses <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.
+    </footer>
+  
+</div>
+
+  
+  <div class="main" id="top">
+    <div id="main-header" class="main-header">
+  
+    
+
+<div class="search" role="search">
+  <div class="search-input-wrap">
+    <input type="text" id="search-input" class="search-input" tabindex="0" placeholder="Search Peer Platform Documentation" aria-label="Search Peer Platform Documentation" autocomplete="off">
+    <label for="search-input" class="search-label"><svg viewBox="0 0 24 24" class="search-icon"><use xlink:href="#svg-search"></use></svg></label>
+  </div>
+  <div id="search-results" class="search-results"></div>
+</div>
+
+  
+  <!-- Custom header with direct logo -->
+<div class="custom-header-wrapper">
+  <div class="custom-header">
+    <div class="custom-logo-container">
+      <a href="/" class="custom-site-title">
+        <img src="/assets/images/logo.png" alt="Peer Platform Documentation" class="custom-site-logo">
+        <span class="custom-site-name">Peer Platform Documentation</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Only show custom header when standard logo doesn't display */
+  .custom-header-wrapper {
+    display: none;
+    margin-bottom: 1rem;
+  }
+  
+  .site-header:not(:has(.site-logo[src$="logo.png"])) + .custom-header-wrapper {
+    display: block;
+  }
+  
+  .custom-header {
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-site-title {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #2d3748;
+    font-weight: 700;
+    font-size: 1.25rem;
+  }
+  
+  .custom-site-logo {
+    height: 40px;
+    width: auto;
+    margin-right: 1rem;
+  }
+  
+  .custom-site-name {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+</style> 
+  
+</div>
+
+    <div class="main-content-wrap">
+      
+      <div id="main-content" class="main-content">
+        <main>
+          
+            <h1 id="creating-a-new-document">
+  
+  
+    <a href="#creating-a-new-document" class="anchor-heading" aria-labelledby="creating-a-new-document"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Creating a New Document
+  
+  
+</h1>
+    
+<h2 id="build--config-phase">
+  
+  
+    <a href="#build--config-phase" class="anchor-heading" aria-labelledby="build--config-phase"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Build &amp; Config Phase
+  
+  
+</h2>
+    
+<p>In our initial rollout, the <strong>Peer team</strong> will create and configure the document for you. During this phase:</p>
+<ol>
+  <li>A new study/document project is created.</li>
+  <li>Relevant <strong>document templates</strong> are chosen (e.g., CSR, Narratives, Protocol, Plain Language Summary).</li>
+  <li>Required data sources (Protocol, SAP, TLF, etc.) are uploaded and processed by the AI engine.</li>
+  <li>The system auto-generates initial content for each section of your document.</li>
+</ol>
+
+<blockquote>
+  <p><em>You (the customer or medical writer) will typically begin working from the <strong>Editing and Review</strong> phase onward.</em></p>
+</blockquote>
+<h2 id="document-types">
+  
+  
+    <a href="#document-types" class="anchor-heading" aria-labelledby="document-types"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Document Types
+  
+  
+</h2>
+    
+<p>Examples of supported document types:</p>
+<ul>
+  <li><strong>Clinical Study Report (CSR)</strong></li>
+  <li><strong>Narratives</strong></li>
+  <li><strong>Protocol</strong></li>
+  <li><strong>Plain Language Summary</strong></li>
+  <li><em>(Add or remove based on your needs)</em></li>
+</ul>
+<h2 id="video-demo-placeholder">
+  
+  
+    <a href="#video-demo-placeholder" class="anchor-heading" aria-labelledby="video-demo-placeholder"><svg viewBox="0 0 16 16" aria-hidden="true"><use xlink:href="#svg-link"></use></svg></a> Video Demo (Placeholder)
+  
+  
+</h2>
+    
+<blockquote>
+  <p>We’ll embed a video here that shows the Peer team’s “Build &amp; Config” process from start to finish.</p>
+</blockquote><hr />
+
+          
+
+          
+            
+          
+        </main>
+        
+
+
+      </div>
+    </div>
+    
+      
+
+<div class="search-overlay"></div>
+
+    
+  </div>
+
+  
+</body>
+</html>
+
