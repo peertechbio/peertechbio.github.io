@@ -1,0 +1,368 @@
+/* Custom styling overrides for Just the Docs theme */
+
+/* Fix sidebar stuck to the left */
+@media (min-width: 66.5rem) {
+  .side-bar {
+    width: 16.5rem !important; /* Fixed width instead of the calculation */
+    left: 0; /* Ensure it's at the left edge */
+  }
+  
+  .side-bar + .main {
+    margin-left: 16.5rem !important; /* Match the sidebar width */
+    max-width: calc(100% - 16.5rem); /* Ensure content fits in remaining space */
+  }
+}
+
+/* Modern, sleek theme styling */
+:root {
+  --peer-primary: #ff4e49;
+  --peer-primary-dark: #e03e39;
+  --peer-secondary: #2d3748;
+  --peer-secondary-light: #4a5568;
+  --peer-background: #ffffff;
+  --peer-sidebar-background: #f8f9fa;
+  --peer-text: #333333;
+  --peer-text-light: #666666;
+  --peer-border: #e2e8f0;
+  --peer-link: #3182ce;
+  --peer-link-hover: #2c5282;
+  --peer-nav-active: #ebf4ff;
+  --peer-code-background: #f7fafc;
+}
+
+/* Body styles for a cleaner look */
+html, body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--peer-text);
+  line-height: 1.6;
+  font-size: 16px;
+  background-color: var(--peer-background);
+}
+
+/* Main layout container */
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 2rem 2rem;
+}
+
+.main-header {
+    min-height: 80px;
+}
+
+/* Sidebar styling */
+.side-bar {
+  background-color: var(--peer-sidebar-background) !important;
+  border-right: 1px solid var(--peer-border) !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Site header */
+.site-header {
+  border-bottom: 1px solid var(--peer-border);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  min-height: 80px;
+}
+
+/* Target the link wrapping the logo */
+.site-header .site-title {
+  display: flex !important; /* Force flex display for the link */
+  align-items: center;
+}
+
+/* Style the logo div which is rendered instead of an actual img tag */
+.site-logo {
+  display: block;
+  height: 60px;
+  /* Add the logo as a background image */
+  background-image: url('/assets/images/logo.png') !important;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}
+
+/* Site title/header text styling (if applicable, separate from logo) */
+.site-title span { /* Style text specifically if needed */
+  font-weight: 700;
+  color: var(--peer-secondary);
+  font-size: 1.25rem;
+}
+
+/* Navigation styling */
+.nav-list {
+  padding: 1rem 0;
+}
+
+.nav-list .nav-list-item {
+  padding: 0.25rem 0;
+}
+
+.nav-list .nav-list-item .nav-list-link {
+  color: var(--peer-text);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.nav-list .nav-list-item .nav-list-link:hover {
+  background-color: var(--peer-nav-active);
+  color: var(--peer-primary);
+}
+
+.nav-list .nav-list-item .nav-list-link.active {
+  background-color: var(--peer-nav-active);
+  color: var(--peer-primary-dark);
+  font-weight: 600;
+}
+
+/* Headers styling */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--peer-secondary);
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 2.25rem;
+  border-bottom: 1px solid var(--peer-border);
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Links styling */
+a {
+  color: var(--peer-link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--peer-link-hover);
+  text-decoration: underline;
+}
+
+/* Buttons styling */
+.btn {
+  background-color: var(--peer-primary);
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+
+.btn:hover {
+  background-color: var(--peer-primary-dark);
+  color: white;
+  text-decoration: none;
+}
+
+/* Code blocks styling */
+pre, code {
+  background-color: var(--peer-code-background);
+  border-radius: 4px;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.9em;
+  padding: 0.2em 0.4em;
+}
+
+pre {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+/* Site title/header */
+.site-title {
+  font-weight: 700;
+  color: var(--peer-secondary);
+  font-size: 1.25rem;
+}
+
+/* Search styling - improved and fixed icon overlap */
+.search {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  position: relative;
+  padding: 1.25rem 1.25rem;
+}
+
+.search-input-wrap {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.search-label {
+  position: absolute;
+  left: 3rem; /* Move label text to the right of the icon */
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--peer-text-light);
+  opacity: 0.8;
+  font-size: 0.95rem;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.search-label .search-icon {
+  width: 1rem;
+  height: 1rem;
+  display: none; /* Hide the icon that's causing overlap */
+}
+
+.search-input {
+  border-radius: 6px;
+  border: 1px solid var(--peer-border);
+  padding: 0.75rem 1rem 0.75rem 2.5rem; /* Added left padding for icon space */
+  font-size: 0.95rem;
+  width: 100%;
+  background-color: white;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="%23666666" d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>');
+  background-repeat: no-repeat;
+  background-position: 0.75rem center;
+  background-size: 1rem;
+}
+
+/* Style placeholder to avoid overlap with the search icon */
+.search-input::placeholder {
+  padding-left: 0.5rem;
+  color: var(--peer-text-light);
+}
+
+/* Search input focus styles */
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 78, 73, 0.2);
+  border-color: var(--peer-primary);
+}
+
+/* Hide placeholder when focused to prevent overlap */
+.search-input:focus::placeholder {
+  color: transparent;
+}
+
+/* Ensure search label doesn't overlap */
+.search-input:focus + .search-label {
+  display: none;
+}
+
+.search-results {
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 1px solid var(--peer-border);
+}
+
+.search-results-list-item {
+  padding: 0.5rem;
+  border-bottom: 1px solid var(--peer-border);
+}
+
+.search-result {
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.search-result-doc-title {
+  font-weight: 600;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid var(--peer-border);
+}
+
+th {
+  background-color: var(--peer-sidebar-background);
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid var(--peer-primary);
+  padding: 0.5rem 0 0.5rem 1rem;
+  margin: 1.5rem 0;
+  color: var(--peer-text-light);
+  font-style: italic;
+  background-color: var(--peer-sidebar-background);
+  border-radius: 0 4px 4px 0;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--peer-border);
+  padding-top: 1rem;
+  font-size: 0.875rem;
+  color: var(--peer-text-light);
+}
+
+/* Create consistent spacing */
+.main-content {
+  padding: 1rem 0;
+}
+
+/* Improve navigation list expanders */
+.nav-list-expander {
+  color: var(--peer-text-light);
+}
+
+/* Mobile navigation improvements */
+@media (max-width: 50rem) {
+  .site-nav {
+    padding: 1rem;
+    background: var(--peer-sidebar-background);
+  }
+  
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #menu-button {
+    margin-right: 0;
+  }
+  
+  /* Adjust search for mobile */
+  .search {
+    padding: 0.5rem;
+  }
+} 
